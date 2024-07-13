@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passo com DOM</title>
+    <style>
+        body{
+            background-color: rgb(123, 123, 241);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Js.</p>
+    <div>Clique em mim</div>
+    <div id="id">Resultado DOM com ID</div>
+    <div class="class">Resultado DOM com Class</div>
+    <div name="name">Resultado DOM com Name</div>
+    <p><strong>Os resultados apareceram depois dessa linha</strong></p>
+
+    <script>
+        var n1 = window.document.getElementsByTagName('p')[0]
+        document.write(n1.innerText)
+        var n2 = window.document.getElementById('id')
+        document.write(n2.innerText)
+        var n3 = window.document.getElementsByClassName('class')[0]
+        document.write(n3.innerText)
+        var n4 =  window.document.getElementsByName('name')[0]
+        document.write(n4.innerText)
+    </script>
+    
+</body>
+</html>
