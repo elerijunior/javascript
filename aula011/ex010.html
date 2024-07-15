@@ -21,9 +21,9 @@
             var txt1 = window.document.querySelector('input#t1')
             var res = window.document.querySelector('div#res')
             var n1 = Number(txt1.value)
-            res.innerHTML = `<p>Sua velocidade é de <strong>${n1}</strong>.</p>`
+            res.innerHTML = `<p>Sua velocidade é de <strong>${n1}Km/h</strong>.</p>`
             if(n1 > 40){
-                res.innerHTML += `<p>Você excedeu a velocidade permitida de 40KM/h</p>`
+                res.innerHTML += `<p>Você excedeu a velocidade permitida de 40KM/h. MULTADO!!</p>`
             }
             res.innerHTML += `<p>Dirija sempre com segurança.</p>`
         }
