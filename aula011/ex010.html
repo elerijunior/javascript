@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Detran</title>
+    <style>
+        body{
+            font: normal 1.2em arial;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="t1" id="t1"> Km/h 
+    <input type="button" value="Verificar" onclick="multa()">
+    <div id="res"></div>
+    <script>
+        function multa(){
+            var txt1 = window.document.querySelector('input#t1')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(txt1.value)
+            res.innerHTML = `<p>Sua velocidade é de <strong>${n1}</strong>.</p>`
+            if(n1 > 40){
+                res.innerHTML += `<p>Você excedeu a velocidade permitida de 40KM/h</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com segurança.</p>`
+        }
+    </script>
+
+    
+</body>
+</html>
