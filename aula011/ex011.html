@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacionalidade</title>
+    <style>
+        body{
+            font: normal 1.2em arial;
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Verificador de Nacionalidade</h1>
@@ -18,9 +24,11 @@
             var res = window.document.querySelector('div#res')
             res.innerHTML = `<p>Você veio do ${n1}!</p>`
             if( n1 == 'brasil'){
-                 res.innerHTML += `<p>Você é brasileiro</p>.`
+                 res.innerHTML += `<p>Você é brasileiro.</p>.`
+            } else if(n1 == 'Brasil' ){
+                res.innerHTML += `<p>Você é brasileiro.</p>.`
             } else{
-                res.innerHTML += `<p>Para Gringo é mais caro.......</p>.`
+                res.innerHTML += `<p>Pra gringo é mais carooo....</p>.`
             }
         }
     </script>
