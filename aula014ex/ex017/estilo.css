@@ -1,32 +1,40 @@
 @charset "UTF-8";
 
-*{
+* {
     font: normal 1.2em arial;
 }
-html, body{
-    margin: 0px;
-    padding: 0px;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-body{
+
+body {
     text-align: center;
-    height: 97vh;
+    min-height: 97vh; /* Utilize min-height para garantir altura mínima */
     background-color: rgb(84, 84, 221);
     color: white;
 }
-header{
 
-}
-section{
-    background-color: white; color: black;
-    width: 500px;
+section {
+    background-color: white;
+    color: black;
+    width: 80%; /* Utilizar largura em porcentagem para responsividade */
+    max-width: 800px; /* Limitar largura máxima */
     margin: auto;
-    text-align: center;
-    padding-top: 20px;
+    text-align: left;
+    padding: 10px;
     border-radius: 7px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
-
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
-footer > p{
+
+div,
+div > p {
+    margin-left: 1rem;
+}
+
+footer > p {
     background-color: white;
     color: black;
     font-size: 0.7em;
