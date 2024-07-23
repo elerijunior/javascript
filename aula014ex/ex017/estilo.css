@@ -12,7 +12,7 @@ html, body {
 
 body {
     text-align: center;
-    min-height: 97vh; /* Utilize min-height para garantir altura mínima */
+    max-height: 90vh; /* Utilize min-height para garantir altura mínima */
     background-color: rgb(84, 84, 221);
     color: white;
 }
