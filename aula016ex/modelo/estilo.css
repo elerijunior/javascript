@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    font: normal 20px arial;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    max-height: 90vh; /* Utilize min-height para garantir altura mínima */
+    background-color: rgb(84, 84, 221);
+    color: white;
+}
+
+section {
+    background-color: white;
+    color: black;
+    width: 80%; /* Utilizar largura em porcentagem para responsividade */
+    max-width: 800px; /* Limitar largura máxima */
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+select{
+    width: 120px;
+}
+
+footer > p {
+    background-color: white;
+    color: black;
+    font-size: 0.7em;
+    text-align: center;
+    font-style: italic;
+}
