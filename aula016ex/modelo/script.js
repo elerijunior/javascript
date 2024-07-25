@@ -3,7 +3,7 @@ let lis = document.querySelector('select#void')
 let res = document.querySelector('div#res')
 let vet = []
 
-function number(n){ //verificar se é um número.
+function number(n){ //verificar se é um número e está entre 1 e 100.
     if(Number(n) >= 1 && Number(n) <= 100){
         return true
     } else{
@@ -26,5 +26,7 @@ function ad(){ // adiciona um valor ao array e verifica se o valor ja foi digita
     } else{
         alert('Valor inválido ou já foi encontrado na lista.')
     }
+    num.value = ''
+    num.focus()
 }
 
